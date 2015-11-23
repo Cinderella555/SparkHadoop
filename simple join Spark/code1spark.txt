@@ -1,0 +1,13 @@
+def split_fileA(line):
+    # split the input line in word and count on the comma
+    # turn the count to an integer  
+    results = line.split(',')
+    word = results[0]
+    count = int(results[1])
+    return (word, count)
+
+def split_fileB(line):
+    # split the input line into word, date and count_string
+    results = line.split(' ')
+    results2 = results[1].split(',')
+    return (results2[0], results[0] + " " + results2[1]) 
